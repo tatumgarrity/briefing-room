@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0d0d0d;
+  --surface: #141414;
+  --border: #222222;
+  --green: #2d5a3d;
+  --amber: #c8853a;
+  --text-primary: #e8e0d6;
+  --text-secondary: #9a9088;
+  --font: Inter, -apple-system, sans-serif;
+}
+
+html, body {
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100dvh; }
+
+button { font-family: var(--font); cursor: pointer; border: none; background: none; color: inherit; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
