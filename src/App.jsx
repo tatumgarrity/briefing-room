@@ -1,7 +1,7 @@
 import './App.css'
 import { useEffect, useState } from 'react'
 
-const ENDPOINT = 'http://localhost:3001/api/briefing'
+const ENDPOINT = (import.meta.env.VITE_API_BASE || 'http://localhost:3001') + '/api/briefing'
 
 function blockText(block) {
   const obj = block?.[block?.type]
